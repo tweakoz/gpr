@@ -33,3 +33,4 @@ add_executable(parse-gcode src/main.cpp)
 target_link_libraries(parse-gcode gpr)
 
 install(TARGETS gpr LIBRARY DESTINATION lib)
+install(FILE ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include/gcode-gpr )
